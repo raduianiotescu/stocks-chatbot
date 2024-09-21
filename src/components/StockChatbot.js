@@ -15,6 +15,7 @@ const StockChatbot = () => {
   const [isOpen, setIsOpen] = useState(true);
   const [messages, setMessages] = useState([]);
 
+  // Chatbot initial greeting
   useEffect(() => {
     if (!isOpen) {
       setMessages((prev) => [
